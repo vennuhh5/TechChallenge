@@ -1,0 +1,47 @@
+
+............Tech Challenge Data............
+
+----------------------------------------------------------------------------------- 
+CustomerId | ContractId | GeoZone | TeamCode  | ProjectCode    | BuildDuration
+----------------------------------------------------------------------------------- 
+   2343225       2345     us_east      RedTeam    ProjectApple   3445s
+   1223456       2345     us_west     BlueTeam   ProjectBanana   2211s
+   3244332       2346     eu_west  YellowTeam3   ProjectCarrot   4322s
+   1233456       2345     us_west     BlueTeam     ProjectDate   2221s
+   3244132       2346     eu_west  YellowTeam3      ProjectEgg   4122s
+----------------------------------------------------------------------------------- 
+
+(1) The Number of Unique CustomerId for each ContractId :: 
+	----------  ------------ 
+	ContractId     CustomerId  
+	----------  ------------ 
+	2346		2
+	2345		3
+----------------------------------------------------------------------------------- 
+
+(2) The Number of Unique CustomerId for each GeoZone :: 
+	----------  ------------ 
+	GeoZone     CustomerId  
+	----------  ------------ 
+	eu_west		2
+	us_west		2
+	us_east		1
+----------------------------------------------------------------------------------- 
+
+(3) The average buildDuration group by GeoZone :: 
+	----------  ------------ 
+	GeoZone     Average Build Duration  
+	----------  ------------ 
+	eu_west	    4222.00
+	us_west	    2216.00
+	us_east	    3445.00
+----------------------------------------------------------------------------------- 
+
+(4) The list of unique customerId for each GeoZone:: 
+	----------  ------------ 
+	GeoZone     CutomerId  
+	----------  ------------ 
+	eu_west	    [3244132, 3244332]
+	us_west	    [1233456, 1223456]
+	us_east	    [2343225]
+----------------------------------------------------------------------------------- 
